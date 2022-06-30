@@ -37,7 +37,6 @@ extern l2_head_st *pcap_get_packet_l2header(const pcap_packet_st *packet);
 /** 获取三层头部 **/
 extern struct iphdr *pcap_get_packet_iphdr(const pcap_packet_st *packet);
 
-
 /** 获取四层头部 **/
 extern void *pcap_get_packet_l4hdr(const pcap_packet_st *packet);
 

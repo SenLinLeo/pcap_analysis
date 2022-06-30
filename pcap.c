@@ -199,6 +199,7 @@ struct iphdr *pcap_get_packet_iphdr(const pcap_packet_st *packet)
         return NULL;
     }
     struct iphdr *iph = (struct iphdr *)(packet->data + sizeof(l2_head_st));
+    
     return iph;
 }
 

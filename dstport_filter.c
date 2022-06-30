@@ -30,7 +30,7 @@ static int dstport_filter_handler(pcap_packet_st *packet, filter_ctrl_st *expr, 
             return FILTER_FALSE;
         }
     } else {
-        printf("Not support dstport!!!!!\n");
+        // printf("Not support dstport!!!!!\n");
         return FILTER_FALSE;
     }
     return filter_check_uint(expr, tcph ? ntohs(tcph->dest) : ntohs(udph->dest));
